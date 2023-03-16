@@ -4,7 +4,6 @@ import Footer from './Footer';
 import Header from './Header';
 import Main from './Main';
 import PopupWithForm from './PopupWithForm';
-// import api from '../utils/api';
 import ImagePopup from './ImagePopup';
 function App() {
 
@@ -12,21 +11,13 @@ function App() {
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState(false);
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
-  // const [cards, setCards] = useState([]);
-  // const [currentUser, setCurrentUser] = useState({});
-
-
 
   function closeAllPopups() {
     setIsEditProfilePopupOpen(false);
     setIsEditAvatarPopupOpen(false);
     setIsAddPlacePopupOpen(false);
-    setSelectedCard();
+    setSelectedCard(null);
   }
-
-  // function onCardClick(card) {
-  //   setSelectedCard(card)
-  // }
 
   return (
     <div className="App">
@@ -37,12 +28,6 @@ function App() {
           onAddPlace={() => setIsAddPlacePopupOpen(true)}
           onEditAvatar={() => setIsEditAvatarPopupOpen(true)}
           onCardClick={(card) => setSelectedCard(card)}
-
-        // cards={cards}
-        // onEditProfile={handleEditProfileClick}
-        // onEditAvatar={handleEditAvatarClick}
-        // onAddPlace={handleAddPlaceClick}
-        // onCardClick={onCardClick}
         />
         <Footer />
       </div>

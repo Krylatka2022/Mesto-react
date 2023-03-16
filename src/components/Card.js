@@ -1,13 +1,10 @@
 import React from 'react';
-import ImagePopup from './ImagePopup';
 
 function Card({ card, name, link, likes, onCardClick }) {
 
     function handleCardClick() {
         onCardClick(card);
     }
-
-
     return (
         <article className="element">
             <img onClick={handleCardClick} className="element__image" alt={name} src={link} />

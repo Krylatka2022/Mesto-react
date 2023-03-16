@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import api from '../utils/api';
-import ImagePopup from './ImagePopup';
 
 
 function Main({ onEditProfile,
@@ -13,35 +12,16 @@ function Main({ onEditProfile,
     const [currentUser, setCurrentUser] = useState({});
     const [cards, setCards] = useState([]);
 
-    // useEffect(() => {
-    //     Promise.all([api.getUserInfo(), api.getInitialCards()])
-    //         .then(([data, items]) => {
-    //             setCurrentUser(data);
-    //             setCards(items);
-    //         })
-    //         .catch((err) => {
-    //             console.log(err)
-    //         })
-    // }, [])
-
     useEffect(() => {
-        api
-            .getUserInfo()
-            .then((data) => {
+        Promise.all([api.getUserInfo(), api.getInitialCards()])
+            .then(([data, items]) => {
                 setCurrentUser(data);
-            })
-            .catch((err) => console.log(err));
-    }, []);
-
-    useEffect(() => {
-        api
-            .getInitialCards()
-            .then((items) => {
                 setCards(items);
             })
-            .catch((err) => console.log(err));
-    }, []);
-
+            .catch((err) => {
+                console.log(err)
+            })
+    }, [])
 
     return (
         <main>
