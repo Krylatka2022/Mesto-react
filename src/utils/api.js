@@ -20,22 +20,22 @@ class Api {
 		}).then(this._checkResponse);
 	}
 
-	changeUserInfo(name, info) {
+	changeUserInfo(items) {
 		return fetch(`${this._baseUrl}/users/me`, {
 			method: "PATCH",
 			headers: this._headers,
 			body: JSON.stringify({
-				name: name,
-				about: info,
+				name: items.name,
+				about: items.about,
 			}),
 		}).then(this._checkResponse);
 	}
 
-	changeUserAvatar(body) {
+	changeUserAvatar(items) {
 		return fetch(`${this._baseUrl}/users/me/avatar`, {
 			method: "PATCH",
 			headers: this._headers,
-			body: JSON.stringify({ avatar: body, }),
+			body: JSON.stringify({ avatar: items.avatar, }),
 		}).then(this._checkResponse);
 	}
 
