@@ -9,7 +9,7 @@ import { CurrentUserContext } from '../contexts/CurrentUserContext';
 import EditProfilePopup from './EditProfilePopup';
 import EditAvatarPopup from './EditAvatarPopup';
 import AddPlacePopup from './AddPlacePopup';
-
+import ConfirmationPopup from './ConfirmationPopup ';
 
 function App() {
 
@@ -19,6 +19,8 @@ function App() {
   const [selectedCard, setSelectedCard] = useState(null);
   const [cards, setCards] = useState([]);
   const [currentUser, setCurrentUser] = useState({});
+  const [isConfirmationPopupOpen, setIsConfirmationPopupOpen] = useState(null)
+
 
   useEffect(() => {
     Promise.all([api.getUserInfo(), api.getInitialCards()])
@@ -121,11 +123,14 @@ function handleAddPlaceSubmit(items) {
 //       };
 //     }, [isOpen])
     
+
   function closeAllPopups() {
     setIsEditProfilePopupOpen(false);
     setIsEditAvatarPopupOpen(false);
     setIsAddPlacePopupOpen(false);
     setSelectedCard(null);
+    setIsConfirmationPopupOpen(null);
+
   }
 
   return (
@@ -139,7 +144,7 @@ function handleAddPlaceSubmit(items) {
           onEditAvatar={() => setIsEditAvatarPopupOpen(true)}
           onCardClick={(card) => setSelectedCard(card)}
           onCardLike = {handleCardLike}
-          onCardDelete={handleCardDelete}
+          onConfirmCardDelete = {(card) => setIsConfirmationPopupOpen(card)}
           cards={cards}
         />
         <Footer />
@@ -162,7 +167,15 @@ function handleAddPlaceSubmit(items) {
         onAddPlace={handleAddPlaceSubmit}
         >
      </AddPlacePopup>
-
+     <ConfirmationPopup
+        card  = {isConfirmationPopupOpen}
+        name="popup_card-delete"
+        title="Вы уверены?"
+        textButton="Да"
+        onClose={closeAllPopups}
+        onCardDelete = {handleCardDelete}
+       >
+      </ConfirmationPopup>
       <ImagePopup card={selectedCard} onClose={closeAllPopups} />
       {/* </div> */}
     </CurrentUserContext.Provider>

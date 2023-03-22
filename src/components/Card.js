@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
-function Card({ card, name, link, likes, onCardClick, onCardLike, onCardDelete}) {
+function Card({ card, name, link, likes, onCardClick, onCardLike, onConfirmCardDelete}) {
    
   const currentUser = useContext(CurrentUserContext);
    
@@ -26,14 +26,14 @@ function Card({ card, name, link, likes, onCardClick, onCardLike, onCardDelete})
     function handleLikeClick() {
         onCardLike(card);
       }
-      function handleDeleteClick() {
-        onCardDelete(card);
+      function handleConfirmClick() {
+        onConfirmCardDelete(card);
       }
     return (
         <article className="element">
             <img onClick={handleCardClick} className="element__image" alt={name} src={link} />
             <button
-                onClick={handleDeleteClick}
+                onClick={handleConfirmClick}
                 className={cardDeleteButtonClassName}
                 type="button"
             ></button>
