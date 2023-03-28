@@ -9,7 +9,7 @@
 Мои предыдущие учебные работы:
 
 - "Научиться учиться" ([HOW-TO-LEARN](https://krylatka2022.github.io/HOW-TO-LEARN/)) - 1-ый спринт;
-- "Путешествие по России" ([RUSSIAN-TRAVEL](https://krylatka2022.github.io/russian-travel/)) - 2-3 спринты;
+- "Путешествие по России" ([RUSSIAN-TRAVEL](https://krylatka2022.github.io/RUSSIAN-TRAVEL/)) - 2-3 спринты;
 - "МЕСТО"  ([MESTO](https://krylatka2022.github.io/MESTO/)) - 4-9 спринты;
 
 ### Стек технологий:
