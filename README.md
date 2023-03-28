@@ -1,4 +1,4 @@
-### MЕСТО-РЕАКТ ([MESTO-REACT](https://krylatka2022.github.io/MESTO-REACT/))
+### MЕСТО-РЕАКТ ([Mesto-react](https://krylatka2022.github.io/Mesto-react/))
 
 Данный проект является точной копией проекта **[MESTO](https://krylatka2022.github.io/MESTO/)**, с тем отличием, что его реализация выполнена на ***React***.
 
@@ -9,8 +9,8 @@
 Мои предыдущие учебные работы:
 
 - "Научиться учиться" ([HOW-TO-LEARN](https://krylatka2022.github.io/HOW-TO-LEARN/)) - 1-ый спринт;
-- "Путешествие по России" ([RUSSIAN-TRAVEL](https://krylatka2022.github.io/RUSSIAN-TRAVEL/)) - 2-3 спринты;
-- "МЕСТО"  ([MESTO](https://krylatka2022.github.io/MESTO/)) - 4-9 спринты;
+- "Путешествие по России" ([Russian-travel](https://krylatka2022.github.io/Russian-travel/)) - 2-3 спринты;
+- "МЕСТО"  ([Mesto](https://krylatka2022.github.io/Mesto/)) - 4-9 спринты;
 
 ### Стек технологий:
 * HTML 5
@@ -35,4 +35,4 @@
 * по итогам каждого спринта работа проверяется код-ревьюерами, критические замечания обязательны для устранения.
 
 ### Ссылка на сайт:
-[MESTO-REACT](https://krylatka2022.github.io/MESTO-REACT/)
+[Mesto-react](https://krylatka2022.github.io/Mesto-react/)
