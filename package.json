@@ -37,8 +37,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://krylatka2022.github.io/mesto-react/",
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
-  }
-}
+ "homepage": "https://krylatka2022.github.io/mesto-react/", 
+  "devDependencies": { 
+    "gh-pages": "^5.0.0" 
+  } 
+} 
