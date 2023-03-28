@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+### MЕСТО-РЕАКТ ([MESTO-REACT](https://krylatka2022.github.io/MESTO-REACT/))
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Данный проект является точной копией проекта **[MESTO](https://krylatka2022.github.io/mesto/)**, с тем отличием, что его реализация выполнена на ***React***.
 
-## Available Scripts
+Это учебный проект по основам React на курсе "веб-разработчик" в Яндекс.Практикуме. Процесс выполнения данной работы состоит из нескольких двухнедельных спринтов (10-12 спринты), поэтому с каждым спринтом код меняется и дополняется.
 
-In the project directory, you can run:
+В процессе выполнения работы предыдущий проект "Место" будет реализован с помощью React
 
-### `npm start`
+Мои предыдущие учебные работы:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- "Научиться учиться" ([HOW-TO-LEARN](https://krylatka2022.github.io/HOW-TO-LEARN/)) - 1-ый спринт;
+- "Путешествие по России" ([RUSSIAN-TRAVEL](https://krylatka2022.github.io/RUSSIAN-TRAVEL/)) - 2-3 спринты;
+- "МЕСТО"  ([MESTO](https://krylatka2022.github.io/MESTO/)) - 4-9 спринты;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Стек технологий:
+* HTML 5
+* CSS 3
+* JavaScript
+* React
+* API
 
-### `npm test`
+### Фукционал:
+* редактирование пользовательских данных (аватара и профиля);
+* добавление новых карточек;
+* удаление пользователем тех карточек, которые добавил именно он;
+* добавление и отмена лайков, счетчик лайков;
+* просмотр увеличенного изображения в попапе;
+* валидация форм;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Особенности проекта:
+* обмен данными через API (используется учебный сервер Яндекс.Практикума);
+* верстка по дизайн-макету из Figma;
+* адаптивная верстка (mobile first);
+* хостинг сайта на github pages;
+* по итогам каждого спринта работа проверяется код-ревьюерами, критические замечания обязательны для устранения.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Ссылка на сайт:
+[MESTO-REACT](https://krylatka2022.github.io/MESTO-REACT/)
